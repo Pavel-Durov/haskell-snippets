@@ -1,0 +1,2 @@
+# haskell-snippets
+haskell exercise
