@@ -7,7 +7,7 @@ fibo' 2 = [1,1]
 fibo' x = fibo(x-1) ++ [ ((last . fibo)(x-1)) + ((last . init . fibo)(x-1)) ]
 
 -- using http://learnyouahaskell.com/syntax-in-functions
-fibo :: Int -> [Int]fibo
+fibo :: Int -> [Int]
 fibo 1 = [1]
 fibo 2 = [1,1]
 fibo x = 
@@ -17,5 +17,5 @@ fibo x =
     in fibo(next) ++ [fst + snd]
   
 main :: IO()
-main = putStrLn(show(fibo 4)) 
+main = putStrLn(show(fibo 10)) 
  
